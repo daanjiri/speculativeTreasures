@@ -16,6 +16,7 @@ const Home = (props: Props) => {
           Especulativos
         </Link>
       </h1>
+
       <div className="fullscreen">
         <div className="video">
           <div className="vimeo-wrapper">
@@ -30,25 +31,8 @@ const Home = (props: Props) => {
           </div>
         </div>
       </div>
-      <div id="about">
-        <h2>Tesoros especulativos</h2>
-        <p>
-          se basa en una Red Adversaria Generativa (GAN) que está entrenada para
-          reconstruir modelos de artefactos arqueológicos del Tesoro de
-          Quimbaya. Los modelos son generados por un algoritmo de aprendizaje
-          automático, diseñado para interpretar nuevas posibilidades formales a
-          partir de una imagen 2D del objeto original. Utilizando una base de
-          datos de objetos escaneados en el Museo del Oro, se entrenó a una red
-          neuronal GAN, con el fin de que aprenda a esculpir nuevos artefactos
-          cuyas cualidades volumétricas los aproximen plásticamente a El Tesoro
-          Quimbaya en posesión del Museo de América en Madrid.
-          <br></br>
-          Los resultados de este proceso especulativo son 6 objetos en 3D, que
-          se enmarcan dentro del materialismo especulativo, ya que son objetos
-          tridimensionales que pueden tomar diferentes materialidades desde la
-          impresión 3D, hasta las realidades aumentadas.
-        </p>
-      </div>
+
+      <div className="plus">+</div>
     </div>
   );
 };

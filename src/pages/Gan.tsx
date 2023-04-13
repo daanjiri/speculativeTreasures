@@ -19,6 +19,27 @@ const images = [
 const Gan = (props: Props) => {
   return (
     <div className="root">
+      <Link to="/figures" style={{ color: '#ffd700', textDecoration: 'none' }}>
+        <div className="arrow">←</div>
+      </Link>
+
+      <div className="grid">
+        {images.map((imageUrl) => {
+          return (
+            <div key={imageUrl}>
+              <img
+                src={imageUrl}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'contain',
+                }}
+              />
+            </div>
+          );
+        })}
+      </div>
+
       <div className="title">
         <Link to="/" style={{ color: '#ffd700', textDecoration: 'none' }}>
           <h1>
@@ -27,43 +48,6 @@ const Gan = (props: Props) => {
             Especulativos
           </h1>
         </Link>
-      </div>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'flex-end',
-        }}
-      >
-        <div className="grid">
-          {images.map((imageUrl) => {
-            return (
-              <div key={imageUrl}>
-                <img
-                  src={imageUrl}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'contain',
-                  }}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <div className="GAN3D">
-        <a href="../index.html" target="">
-          <img
-            src="src/assets/icon_3D.png"
-            alt="GAN3D"
-            style={{
-              height: '100px',
-              borderRadius: '50%',
-            }}
-          />
-        </a>
       </div>
     </div>
   );

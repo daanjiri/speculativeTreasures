@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'NectoMono';
   src: local('NectoMono'), url('./fonts/Necto-Mono.woff') format('woff');
   font-weight: normal;
@@ -9,7 +9,31 @@
   font-family: 'Sinsitre';
   src: local('Sinsitre'),
     url('../fonts/Sinistre-StCaroline.woff2') format('woff2'),
-    url('./fonts/Sinistre-StCaroline.woff') format('woff');
+    url('../fonts/Sinistre-StCaroline.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/* @font-face {
+  font-family: 'Centers';
+  src: local('Centers'), url('../fonts/Centers George.woff2') format('woff2'),
+    url('../fonts/Centers George.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Celattin';
+  src: url('./fonts/celattin font.woff2') format('woff2'),
+    url('./fonts/celattin font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Centers';
+  src: url('./fonts/Centers George.woff2') format('woff2'),
+    url('./fonts/Centers George.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

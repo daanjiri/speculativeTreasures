@@ -9,10 +9,17 @@
 }
 
 h1 {
-  font-family: 'Sinsitre';
-  font-size: 6vw;
+  font-family: 'Centers';
+  font-size: 10vh;
   color: #ffd700;
   cursor: pointer;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+  z-index: 100;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0;
 }
 
 h1:hover {
@@ -41,29 +48,19 @@ h1:hover {
   transform: translate(-50%, -50%);
 }
 
-#about {
+.plus {
   position: fixed;
-  /*  display: none;*/
-  top: 0%;
-  right: 0%;
-  text-align: right;
-  padding: 3%;
-  height: 100%;
-  width: 40%;
-  border-top: none;
-  border-right: none;
-  border-left: 1px solid #ffd700;
-  border-bottom: 1px solid #ffd700;
-  transition: all 0.5s ease;
-  background-color: #000;
-  font-family: 'NectoMono', auto;
-  font-size: 1.4vw;
-  color: #fff;
-}
-
-#about h2 {
-  margin: 0;
-  font-family: 'Sinsitre', auto;
+  bottom: 3%;
+  left: 3%;
+  z-index: 100;
   font-size: 3vw;
   color: #ffd700;
+  cursor: pointer;
+  margin: 0;
+  font-family: 'Celattin', auto;
+}
+
+.plus:hover {
+  color: #fff;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgba(255, 0, 255, 1), 0 0 5px #fff;
 }
