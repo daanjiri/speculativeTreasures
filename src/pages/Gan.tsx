@@ -26,7 +26,7 @@ const Gan = (props: Props) => {
       <div className="grid">
         {images.map((imageUrl) => {
           return (
-            <div key={imageUrl}>
+            <Link to="/model" key={imageUrl}>
               <img
                 src={imageUrl}
                 style={{
@@ -35,7 +35,7 @@ const Gan = (props: Props) => {
                   objectFit: 'contain',
                 }}
               />
-            </div>
+            </Link>
           );
         })}
       </div>
